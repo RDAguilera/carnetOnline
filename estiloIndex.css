@@ -34,7 +34,7 @@ header {
 
 .imgEnc{
   position: absolute;
-  width: 262px; /* Ajustar el tamaño del logo */
+  width: 262px; /* Ajustar el tamaño de la img derecha*/
   height: 189px;
   margin-top: 0px;
   margin-left: 79.7%;
@@ -51,7 +51,7 @@ header {
 
 .titulo h1{
   padding: 20px;
-  color:azure;
+  color:white;
   margin-top: 0px;
   
 }
@@ -81,7 +81,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #0056b3;
+  color:var(--azul);
 }
 
 .accordion {
@@ -95,8 +95,8 @@ h1 {
 .accordion-title {
   display: block;
   padding: 15px;
-  background: #007bff;
-  color: #fff;
+  background: var(--celeste);
+  color: white;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -104,7 +104,7 @@ h1 {
 }
 
 .accordion-title:hover {
-  background: #0056b3;
+  background:var(--azul);
 }
 
 .accordion-content {
@@ -159,7 +159,7 @@ h1 {
 .mosaic-title {
   padding: 10px;
   text-align: center;
-  background-color: #0056b3;
+  background-color:var(--azul);
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -187,3 +187,54 @@ h1 {
   padding: 16px;
 }
 /* Fin Footer */
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header {    
+    height: 135px; /* alto */    
+  }
+  .logo {
+    width: 50px; /* Ajustar el tamaño del logo */      
+  }
+  
+  .textoLogo {
+    font-size: 20px; /* Ajustar el tamaño del texto */    
+  }
+  
+  .texto {  
+    font-size: 14px; /* Ajustar el tamaño del texto */    
+  }
+  
+  .imgEnc{
+    position: absolute;
+    width: 152px; /* Ajustar el tamaño de la img derecha*/
+    height: 174px;    
+    margin-left: 60%;    
+  }
+
+  .titulo{
+    background-color: var(--celeste);
+    height: 65px;
+    text-align: center;  
+    border-top: 2.5px solid darkgoldenrod;
+  }
+  
+  .titulo h1{
+    padding: 10px;
+    color:azure;
+    margin-top: 0px;
+    font-size: 25px;
+  }
+
+  .container h1{
+    font-size: 20px;
+  }
+
+  .mosaic-title {    
+    font-size: 14px;
+  }
+
+  .Pie{    
+    font-size: 12px;
+  }
+}
