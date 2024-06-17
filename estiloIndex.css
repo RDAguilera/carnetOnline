@@ -244,12 +244,3 @@ h1 {
     font-size: 12px;
   }
 }
-
-@media (max-width: 786px) {
-  .imgEnc{
-    position:absolute;
-    width: 152px; /* Ajustar el tamaño de la img derecha*/
-    height: 125px;    
-    margin-left: 75%;    
-  }
-}
