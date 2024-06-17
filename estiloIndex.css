@@ -191,25 +191,25 @@ h1 {
 /* Estilos responsivos */
 @media (max-width: 768px) {
   header {    
-    height: 135px; /* alto */    
+    height: 105px; /* alto */    
   }
   .logo {
-    width: 50px; /* Ajustar el tamaño del logo */      
+    width: 35px; /* Ajustar el tamaño del logo */      
   }
   
   .textoLogo {
-    font-size: 20px; /* Ajustar el tamaño del texto */    
-  }
-  
-  .texto {  
     font-size: 14px; /* Ajustar el tamaño del texto */    
   }
   
+  .texto {  
+    font-size: 12px; /* Ajustar el tamaño del texto */    
+  }
+  
   .imgEnc{
-    position: absolute;
+    position:absolute;
     width: 152px; /* Ajustar el tamaño de la img derecha*/
-    height: 174px;    
-    margin-left: 60%;    
+    height: 105px;    
+    margin-left: 59%;    
   }
 
   .titulo{
@@ -231,10 +231,24 @@ h1 {
   }
 
   .mosaic-title {    
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .mosaic-item {
+    flex: 1 1 calc(25% - 25px);
+    margin: 10px;    
   }
 
   .Pie{    
     font-size: 12px;
+  }
+}
+
+@media (max-width: 786px) {
+  .imgEnc{
+    position:absolute;
+    width: 152px; /* Ajustar el tamaño de la img derecha*/
+    height: 125px;    
+    margin-left: 75%;    
   }
 }
