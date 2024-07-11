@@ -4,6 +4,7 @@
   --celeste:rgb(43, 124, 216);
   --celesteClaro:rgb(122, 193, 249);   
 }
+
 header {
   background-color:var(--azul); /* Azul */
   height: 165px; /* 20 cm de alto */
@@ -43,49 +44,83 @@ header {
   border-bottom-left-radius: 60%;
 }
 
-main {
-  padding: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.central {
-  background-color: white;
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.left-column, .right-column {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.left-column {
-  text-align: left;
-  font-size: 18px;
-}
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imgColR {
-  width: 100%;
-  max-width: 300px;
+h1 {
+  text-align: center;
   margin-bottom: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  color: #0056b3;
 }
 
-.imgColR:hover {
-  transform: scale(1.05);
+.accordion {
+  margin: 20px 0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.accordion-title {
+  display: block;
+  padding: 15px;
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.accordion-title:hover {
+  background: #0056b3;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  background: #f9f9f9;
+}
+
+.accordion-content ul {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  margin: 10px 0;
+}
+
+.accordion input[type="checkbox"] {
+  display: none;
+}
+
+.accordion input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 1000px;
+  padding: 15px;
+  transition: max-height 0.5s ease;
 }
 
 /* Footer */
@@ -100,3 +135,4 @@ main {
   padding: 16px;
 }
 /* Fin Footer */
+
