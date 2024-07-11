@@ -6,15 +6,17 @@
   <title>Carnet OnLine-Inicio</title>
   <link rel="stylesheet" type="text/css" href="estiloIndex.css">
 </head>
-<body>
+<body>  
   <header>
     <div class="encabezado">
-      <img src="logo1.png" alt="Logo" class="logo">
-      <span class="textoLogo">Digi Com</span>
-      <img class="imgEnc" src="ImgEncabezado.jpeg" alt="Logo" class="logo">
+        <div class="logo-texto">
+            <img src="logo1.png" alt="Logo" class="logo">
+            <span class="textoLogo">Digi Com</span>
+        </div>
+            <!--<img class="imgEnc" src="ImgEncabezado.jpeg" alt="Encabezado">-->
     </div>
     <span class="texto">Soluciones Digitales para Municipios</span>
-  </header>
+  </header>  
   <main>
     <div class="titulo">
       <h1>Licencia de conducir</h1>
@@ -111,13 +113,13 @@
               <input type="checkbox" id="item4">
               <label for="item4" class="accordion-title">Contacto y Asistencia</label>
               <div class="accordion-content">
-                  <p>Para cualquier consulta adicional o asistencia en el proceso de obtención de su licencia de conducir, puede comunicarse con el Centro de Atención al Ciudadano del municipio o acceder a la sección de preguntas frecuentes en nuestro portal web.</p>
+                  <p>Para cualquier consulta adicional o asistencia en el proceso de obtención de su licencia de conducir, puede comunicarse con el Centro de Atención al Ciudadano del municipio o <a href="faq.html">acceder a la sección de preguntas frecuentes en nuestro portal web.</a></p>
                   <p>Agradecemos su atención y le recordamos la importancia de conducir de manera responsable y segura, respetando siempre las normativas vigentes para contribuir a una mejor convivencia vial.</p>
               </div>
           </div>
       </div>
 
-      <h1>Municipios Adheridos</h1>
+      <h1 id="municipios">Municipios Adheridos</h1>
         <div class="mosaic-container">
             <div class="mosaic-item">
                 <a href="carnetDigital.html" target="_blank">

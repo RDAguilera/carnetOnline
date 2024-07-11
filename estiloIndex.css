@@ -4,7 +4,6 @@
   --celeste:rgb(43, 124, 216);
   --celesteClaro:rgb(122, 193, 249);   
 }
-
 header {
   background-color:var(--azul); /* Azul */
   height: 165px; /* 20 cm de alto */
